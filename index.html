@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTR Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="upload-box d-flex flex-column align-items-center my-4">
+        <label for="pdfUpload" class="form-label fw-bold">Upload your DTR PDF</label>
+        <input type="file" id="pdfUpload" accept="application/pdf" class="form-control mb-3" style="max-width:300px;">
+        <button class="btn btn-primary" onclick="previewPrint()">🖨 Print Preview</button>
+    </div>
+
+    <div class="page" id="formsContainer"></div>
+
+    <div class="instructions">
+        <div class="page">
+            <div class="instr-copy">
+                <h4 style="text-align:center; text-decoration: underline;">INSTRUCTIONS</h4>
+                <p style="font-size:12px; text-align:justify;">
+                    Civil Service Form 48, after completion, should be filed in the records of the Bureau or Office which submits the 
+                    monthly report on Civil Service Form No.3 to the Bureau of Civil Service. <br><br>
+
+                    In lieu of the above, court interpreters and stenographers who accompany the judges of the Court of  First Instance 
+                    will fill out the daily time reports on this form in triplicate, after which they should be approved by the judge 
+                    with whom service has been rendered, or by an officer of the Department of Justice authorized to do so. The original 
+                    should be forwarded promptly after the end of the month to the Bureau of Civil Service, thru the  Department of 
+                    Justice; the duplicate to be kept in the Department of Justice; and the triplicate, in the office of the Clerk of 
+                    Court where service was rendered <br><br>
+
+                    In the space provided for the purpose on the other side will be indicated the office hours the employee is required 
+                    to observe, as far example,  "Regulardays, 8:00 - 12:00 and 1-4;  Saturdays, 8:00 - 1:00/" <br><br>
+
+                    Each chief of a Bureau or Office shall require a daily record of attendance of all the officers and employees under 
+                    him entitled to leave of absence or vacation (including teachers) to be kept on the proper form and also a systematic 
+                    office record showing for each day all absences from duty from any cause whatever. At the beginning of each month he 
+                    shall report to the Commissioner on the proper form of all absence from any cause whatever,including the exact amount 
+                    of undertime of each person for each day.  Officers or employees serving i the filed or on the water need not be 
+                    required to keep a daily record, but all absences of such employees muyst be included tn the monthly report of changes 
+                    and absences. Falsification of time records will render the offending officer or employee lible to summary removal 
+                    from the service and criminal prosecution." <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    (Note A record made from memory or sometime subsequent to the occurrence of an event is not reliable. Non- observance 
+                    of office hours deprives the employee of the leave privilegies althou he may have rendered overtime service. Where 
+                    service rendered outside of the Office for the whole morning or afternoon notation to that office should be made clearly.).
+                </p>
+            </div>
+            <div class="instr-copy">
+                <h4 style="text-align:center; text-decoration: underline;">INSTRUCTIONS</h4>
+                <p style="font-size:12px; text-align:justify;">
+                    Civil Service Form 48, after completion, should be filed in the records of the Bureau or Office which submits the 
+                    monthly report on Civil Service Form No.3 to the Bureau of Civil Service. <br><br>
+
+                    In lieu of the above, court interpreters and stenographers who accompany the judges of the Court of  First Instance 
+                    will fill out the daily time reports on this form in triplicate, after which they should be approved by the judge 
+                    with whom service has been rendered, or by an officer of the Department of Justice authorized to do so. The original 
+                    should be forwarded promptly after the end of the month to the Bureau of Civil Service, thru the  Department of 
+                    Justice; the duplicate to be kept in the Department of Justice; and the triplicate, in the office of the Clerk of 
+                    Court where service was rendered <br><br>
+
+                    In the space provided for the purpose on the other side will be indicated the office hours the employee is required 
+                    to observe, as far example,  "Regulardays, 8:00 - 12:00 and 1-4;  Saturdays, 8:00 - 1:00/" <br><br>
+
+                    Each chief of a Bureau or Office shall require a daily record of attendance of all the officers and employees under 
+                    him entitled to leave of absence or vacation (including teachers) to be kept on the proper form and also a systematic 
+                    office record showing for each day all absences from duty from any cause whatever. At the beginning of each month he 
+                    shall report to the Commissioner on the proper form of all absence from any cause whatever,including the exact amount 
+                    of undertime of each person for each day.  Officers or employees serving i the filed or on the water need not be 
+                    required to keep a daily record, but all absences of such employees muyst be included tn the monthly report of changes 
+                    and absences. Falsification of time records will render the offending officer or employee lible to summary removal 
+                    from the service and criminal prosecution." <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    (Note A record made from memory or sometime subsequent to the occurrence of an event is not reliable. Non- observance 
+                    of office hours deprives the employee of the leave privilegies althou he may have rendered overtime service. Where 
+                    service rendered outside of the Office for the whole morning or afternoon notation to that office should be made clearly.).
+                </p>
+            </div>
+            <div class="instr-copy">
+                <h4 style="text-align:center; text-decoration: underline;">INSTRUCTIONS</h4>
+                <p style="font-size:12px; text-align:justify;">
+                    Civil Service Form 48, after completion, should be filed in the records of the Bureau or Office which submits the 
+                    monthly report on Civil Service Form No.3 to the Bureau of Civil Service. <br><br>
+
+                    In lieu of the above, court interpreters and stenographers who accompany the judges of the Court of  First Instance 
+                    will fill out the daily time reports on this form in triplicate, after which they should be approved by the judge 
+                    with whom service has been rendered, or by an officer of the Department of Justice authorized to do so. The original 
+                    should be forwarded promptly after the end of the month to the Bureau of Civil Service, thru the  Department of 
+                    Justice; the duplicate to be kept in the Department of Justice; and the triplicate, in the office of the Clerk of 
+                    Court where service was rendered <br><br>
+
+                    In the space provided for the purpose on the other side will be indicated the office hours the employee is required 
+                    to observe, as far example,  "Regulardays, 8:00 - 12:00 and 1-4;  Saturdays, 8:00 - 1:00/" <br><br>
+
+                    Each chief of a Bureau or Office shall require a daily record of attendance of all the officers and employees under 
+                    him entitled to leave of absence or vacation (including teachers) to be kept on the proper form and also a systematic 
+                    office record showing for each day all absences from duty from any cause whatever. At the beginning of each month he 
+                    shall report to the Commissioner on the proper form of all absence from any cause whatever,including the exact amount 
+                    of undertime of each person for each day.  Officers or employees serving i the filed or on the water need not be 
+                    required to keep a daily record, but all absences of such employees muyst be included tn the monthly report of changes 
+                    and absences. Falsification of time records will render the offending officer or employee lible to summary removal 
+                    from the service and criminal prosecution." <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    (Note A record made from memory or sometime subsequent to the occurrence of an event is not reliable. Non- observance 
+                    of office hours deprives the employee of the leave privilegies althou he may have rendered overtime service. Where 
+                    service rendered outside of the Office for the whole morning or afternoon notation to that office should be made clearly.).
+                </p>
+            </div>
+            <div class="instr-copy">
+                <h4 style="text-align:center; text-decoration: underline;">INSTRUCTIONS</h4>
+                <p style="font-size:12px; text-align:justify;">
+                    Civil Service Form 48, after completion, should be filed in the records of the Bureau or Office which submits the 
+                    monthly report on Civil Service Form No.3 to the Bureau of Civil Service. <br><br>
+
+                    In lieu of the above, court interpreters and stenographers who accompany the judges of the Court of  First Instance 
+                    will fill out the daily time reports on this form in triplicate, after which they should be approved by the judge 
+                    with whom service has been rendered, or by an officer of the Department of Justice authorized to do so. The original 
+                    should be forwarded promptly after the end of the month to the Bureau of Civil Service, thru the  Department of 
+                    Justice; the duplicate to be kept in the Department of Justice; and the triplicate, in the office of the Clerk of 
+                    Court where service was rendered <br><br>
+
+                    In the space provided for the purpose on the other side will be indicated the office hours the employee is required 
+                    to observe, as far example,  "Regulardays, 8:00 - 12:00 and 1-4;  Saturdays, 8:00 - 1:00/" <br><br>
+
+                    Each chief of a Bureau or Office shall require a daily record of attendance of all the officers and employees under 
+                    him entitled to leave of absence or vacation (including teachers) to be kept on the proper form and also a systematic 
+                    office record showing for each day all absences from duty from any cause whatever. At the beginning of each month he 
+                    shall report to the Commissioner on the proper form of all absence from any cause whatever,including the exact amount 
+                    of undertime of each person for each day.  Officers or employees serving i the filed or on the water need not be 
+                    required to keep a daily record, but all absences of such employees muyst be included tn the monthly report of changes 
+                    and absences. Falsification of time records will render the offending officer or employee lible to summary removal 
+                    from the service and criminal prosecution." <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    (Note A record made from memory or sometime subsequent to the occurrence of an event is not reliable. Non- observance 
+                    of office hours deprives the employee of the leave privilegies althou he may have rendered overtime service. Where 
+                    service rendered outside of the Office for the whole morning or afternoon notation to that office should be made clearly.).
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="powered" style="text-align:center; font-size:15px; margin-top:30px; font-style:italic; color:gray;">
+        Developed By: <b>TeradaPasagad</b>
+    </div>
+
+    <!-- Progress Modal -->
+     <div class="modal fade" id="progressModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <h5 class="modal-title text-center">Processing PDF...</h5>
+                <div class="progress mt-3">
+                    <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-success"role="progressbar" style="width: 0%">
+                        0%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
+    <script>
+        const fileInput = document.getElementById('pdfUpload');
+        const formsContainer = document.getElementById('formsContainer');
+        const progressModal = new bootstrap.Modal(document.getElementById('progressModal'));
+        const progressBar = document.getElementById('progressBar');
+
+        fileInput.addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            progressBar.style.width = "0%";
+            progressBar.textContent = "0%";
+            progressModal.show();
+
+            const fileReader = new FileReader();
+            fileReader.onload = async function() {
+                const typedarray = new Uint8Array(this.result);
+                const pdf = await pdfjsLib.getDocument(typedarray).promise;
+                let textContent = '';
+
+                for (let i = 1; i <= pdf.numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const text = await page.getTextContent();
+                    text.items.forEach(item => textContent += item.str + ' ');
+
+                    let percent = Math.round((i / pdf.numPages) * 100);
+                    progressBar.style.width = percent + "%";
+                    progressBar.textContent = percent + "%";
+                }
+
+                let empName = "_____________________";
+                let period = "For the month of _____________";
+
+                const nameMatch = textContent.match(/Employee\s+(.*?)\s+Position/);
+                if (nameMatch) empName = nameMatch[1];
+
+                const periodMatch = textContent.match(/Period\s+([A-Za-z0-9\s\-]+)/);
+                if (periodMatch) period = periodMatch[1];
+
+                const yearMatch = textContent.match(/\d{2}\/\d{2}\/(\d{4})/);
+                if (yearMatch) {
+                    const year = yearMatch[1];
+                    period = `${period} ${year}`;
+                }
+
+                // --- Extract all dates and get the first & last day ---
+                const allDates = [...textContent.matchAll(/\d{2}\/(\d{2})\/(\d{4})/g)];
+                if (allDates.length > 0) {
+                    // extract all day numbers and year
+                    const days = allDates.map(m => parseInt(m[1]));
+                    const minDay = Math.min(...days);
+                    const maxDay = Math.max(...days);
+                    const year = parseInt(allDates[0][2]);
+
+                    // get current month name from first valid date
+                    const firstDate = allDates[0][0]; // e.g. "10/02/2025"
+                    const monthNum = parseInt(firstDate.split("/")[0]);
+                    const monthNames = [
+                        "January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"
+                    ];
+                    const monthName = monthNames[monthNum - 1];
+
+                    // Determine the cutoff range based on DTR pattern
+                    let startDay = minDay;
+                    let endDay = maxDay;
+
+                    // Adjust to the nearest cutoff ranges (1–15 or 16–31)
+                    if (maxDay <= 15) {
+                        startDay = 1;
+                        endDay = 15;
+                    } else if (minDay >= 16) {
+                        startDay = 16;
+                        endDay = 31;
+                    } else if (minDay === 1 && (maxDay === 30 || maxDay === 31)) {
+                        startDay = 1;
+                        endDay = maxDay; // full month
+                    }
+
+                    // Format final period output
+                    period = `${monthName} ${startDay} - ${endDay}, ${year}`;
+                }
+
+                const rows = textContent.match(/\d{7}\s+\w+\s+\d{2}\/\d{2}\/\d{4}.*?(?=\d{7}|$)/gs) || [];
+                let logsByDay = {};
+
+                function timeToMinutes(timeStr) {
+                    if (!timeStr) return null;
+                    const [hm, ap] = timeStr.split(" ");
+                    let [h, m] = hm.split(":").map(Number);
+                    if (ap === "PM" && h !== 12) h += 12;
+                    if (ap === "AM" && h === 12) h = 0;
+                    return h * 60 + m;
+                }
+
+                rows.forEach(r => {
+                    const parts = r.trim().split(/\s+/);
+                    const date = parts[2];
+                    const dayNum = parseInt(date.split('/')[1]);
+                    const timeStr = parts[3] + " " + parts[4];
+                    const mode = parts[5];
+
+                    if (!logsByDay[dayNum]) logsByDay[dayNum] = { amIn: '', amOut: '', pmIn: '', pmOut: '' };
+
+                    let [hm, ap] = [parts[3], parts[4]];
+                    let [h, m] = hm.split(':').map(Number);
+                    if (ap === "PM" && h !== 12) h += 12;
+                    if (ap === "AM" && h === 12) h = 0;
+                    const hour24 = h;
+
+                    // --- Function to check duplicates or 1-minute gap ---
+                    function isDuplicateOrClose(existing, candidate) {
+                        if (!existing) return false;
+                        const diff = Math.abs(timeToMinutes(existing) - timeToMinutes(candidate));
+                        return diff <= 1; // consider same or 1 minute difference as duplicate
+                    }
+
+                    if (mode === "In") {
+                        if (hour24 < 12) {
+                            if (!isDuplicateOrClose(logsByDay[dayNum].amIn, timeStr))
+                                logsByDay[dayNum].amIn ||= timeStr;
+                        } else {
+                            if (!isDuplicateOrClose(logsByDay[dayNum].pmIn, timeStr))
+                                logsByDay[dayNum].pmIn ||= timeStr;
+                        }
+                    } else if (mode === "Out") {
+                        if (hour24 < 13) {
+                            if (!isDuplicateOrClose(logsByDay[dayNum].amOut, timeStr))
+                                logsByDay[dayNum].amOut ||= timeStr;
+                        } else {
+                            if (!isDuplicateOrClose(logsByDay[dayNum].pmOut, timeStr))
+                                logsByDay[dayNum].pmOut ||= timeStr;
+                        }
+                    }
+                });
+
+
+                // --- NEW: Helper functions
+                function stripAMPM(timeStr) {
+                    if (!timeStr) return "";
+                    return timeStr.replace(/\s*(AM|PM)$/i, ""); // remove AM/PM
+                }
+
+                function buildForm(copyIndex) {
+                    let rowsHtml = "";
+                    for (let d = 1; d <= 31; d++) {
+                        const log = logsByDay[d] || {};
+                        rowsHtml += `
+                            <tr data-day="${d}">
+                                <td>${d}</td>
+                                <td class="amIn" contenteditable="true" data-day="${d}" data-field="amIn" data-fulltime="${log.amIn || ''}">
+                                    ${stripAMPM(log.amIn || '')}
+                                </td>
+                                <td class="amOut" contenteditable="true" data-day="${d}" data-field="amOut">
+                                    ${stripAMPM(log.amOut || '')}
+                                </td>
+                                <td class="pmIn" contenteditable="true" data-day="${d}" data-field="pmIn">
+                                    ${stripAMPM(log.pmIn || '')}
+                                </td>
+                                <td class="pmOut" contenteditable="true" data-day="${d}" data-field="pmOut">
+                                    ${stripAMPM(log.pmOut || '')}
+                                </td>
+                                <td class="remarks" contenteditable="false" data-day="${d}" data-field="remarks"></td>
+                                <td></td>
+                            </tr>`;
+                    }
+
+                    return `
+                        <div class="dtr">
+                            <h5 style="text-align:left;font-size:7px;">Civil Service Form No. 48</h5>
+                            <h2 style="text-align:center;font-size:11px;">DAILY TIME RECORD</h2>
+                            <h4 style="text-align:center;font-size:15px;font-weight: bold;text-decoration: underline;">${empName}</h4>
+                            <h4 style="text-align:center;font-size:7px;">Name</h4>
+                            <h4 style="text-align:left;font-size:11px;">For the month of <span style="text-decoration: underline;font-size:15px;">${period}</span></h4>
+                            <p style="text-align:left;font-size:10px;">Official hours for arrival (Regular days) <br> and departure (Saturdays & Sundays)</p>
+                            <table style="margin-top: -15px">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">DAY</th>
+                                        <th colspan="2">A.M.</th>
+                                        <th colspan="2">P.M.</th>
+                                        <th colspan="2">UNDERTIME</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Arrival</th>
+                                        <th>Departure</th>
+                                        <th>Arrival</th>
+                                        <th>Departure</th>
+                                        <th colspan="1">Hours</th>
+                                        <th colspan="1">Mins</th>
+                                    </tr>
+                                </thead>
+                                <tbody>${rowsHtml}</tbody>
+                            </table>
+                            <p style="text-align:left;font-weight:bold;font-size:13px;">
+                                Total: _____________________________________
+                            </p>
+                            <div class="footer">
+                                <p>I certify on my honor that the above is a true and correct report of the hours of work performed, record of which was made during the time of arrival at and departure from office.</p>
+                            </div>
+                            <div class="signature">
+                                <span>${empName}</span>
+                                <div>Verified as to the prescribed office hours.</div>
+                                <div style="margin-top:20px;"><span>In-Charge</span></div>
+                            </div>
+                        </div>`;
+                }
+
+                // Generate 4 DTR copies
+                formsContainer.innerHTML = buildForm(1) + buildForm(2) + buildForm(3) + buildForm(4);
+
+                // Sync content across forms
+                formsContainer.querySelectorAll("td[contenteditable=true]").forEach(cell => {
+                    cell.addEventListener("input", (e) => {
+                        const day = cell.getAttribute("data-day");
+                        const field = cell.getAttribute("data-field");
+                        const newValue = cell.innerText.trim();
+
+                        // sync value to other copies
+                        formsContainer.querySelectorAll(`td[data-day="${day}"][data-field="${field}"]`).forEach(otherCell => {
+                            if (otherCell !== cell) otherCell.innerText = newValue;
+                        });
+                    });
+                });
+
+                progressModal.hide();
+
+            };
+            fileReader.readAsArrayBuffer(file);
+        });
+    </script>  
+       <script>
+function previewPrint() {
+    if (window.electronAPI) {
+        window.electronAPI.printPreview();
+    } else {
+        alert("Print API not available.");
+    }
+}
+</script>
+</body>
+</html>
