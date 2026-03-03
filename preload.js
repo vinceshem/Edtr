@@ -1,5 +1,5 @@
-const { contextBridge, ipcRenderer } = require('electron');
+const { contextBridge, ipcRenderer } = require("electron");
 
-contextBridge.exposeInMainWorld('electronAPI', {
-  printPreview: (html) => ipcRenderer.send('print-preview', html)
+contextBridge.exposeInMainWorld("electronAPI", {
+  printPreview: () => ipcRenderer.invoke("print-preview"),
 });
